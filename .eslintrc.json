@@ -15,6 +15,28 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
+        "sort-imports": 
+        [
+          "error", 
+          { 
+            "ignoreCase": true, 
+            "ignoreDeclarationSort": true 
+          }
+        ], 
+        "import/order": 
+        [
+          1, 
+          { "groups": 
+            [
+              "external", 
+              "builtin", 
+              "internal", 
+              "sibling", 
+              "parent", 
+              "index"
+            ], 
+          } 
+        ],
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -30,7 +52,8 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ]
+        ],
+        
       }
     },
     {
