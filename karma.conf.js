@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/crophub-auth-ui'),
+      dir: require('path').join(__dirname, './coverage/angular-boilerplate'),
       subdir: '.',
       reporters: [
         { type: 'html' },
